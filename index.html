@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="icon" type="image/x-icon" href="https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/278091078_1996460823871351_5955089789385928029_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ifgsFdiQx0QAX_ETQja&_nc_ht=scontent.fhan5-2.fna&oh=00_AfDCugdHjnLddNRjoPkFavd1NAwprqZcn_U6RSaXaj-xyg&oe=645C3B42">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/font/fonts/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="/assets/images/logooo.png" class="logo">
+            <button class="js-about">ABOUT</button>
+        </nav>
+        <div class="detel">
+            <h1>I'M <span>TRONG</span></h1>
+        </div>
+        <div class="images">
+            <img src="/assets/images/shape.png" class="shape">
+            <img src="/assets/images/boy.png" class="boy">
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/cao.hitle"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cao.hitle/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/TrongLe24"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/channels/1041327280368123965/1041327280833703965"><i class="fab fa-discord"></i></a>
+        </div>  
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container ">
+            <div class="modal-close js-close">
+                <i class="ti-close"></i>
+            </div>
+            <div class="modal-info mt-64">
+                <div class="modal-headding">
+                    <h3>Giới thiệu bản thân</h3>
+                </div>
+                <ul class="modal-desc">
+                    <li>Quê: Hưng Yên</li>
+                    <li>Ngành: CNTT</li>
+                    <li>Tính cách: Vui vẻ, hòa đồng</li>
+                </ul>
+
+            </div>
+
+            <div class="modal-study mt-64">
+                <div class="modal-headding">
+                    <h3>Trình độ học vấn</h3>
+                </div>
+                <ul class="modal-desc">
+                    <li>Điểm thi đại học: 28,45</li>
+                    <li>Lên đại học không còn chăm học nữa chỉ chơi game</li>
+                    <li>Đã học qua html, css cơ bản</li>
+                </ul>
+            </div>
+
+            <div class="modal-hobby mt-64">
+                <div class="modal-headding">
+                    <h3>Sở thích cá nhân</h3>
+                </div>
+                <ul class="modal-desc">
+                    <li>Chơi game, thể thao, ăn uống</li>
+                    <li>Thi thoảng thích code </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        const modalAbout = document.querySelector('.js-about');
+        const modalClose = document.querySelector('.js-close');
+        const modal = document.querySelector('.js-modal');
+        function showModal() {
+            modal.classList.add('open');
+        }
+        function hiddenModal() {
+            modal.classList.remove('open');
+        }
+        modalAbout.addEventListener('click',showModal);
+        modalClose.addEventListener('click',hiddenModal);
+    </script>
+</body>
+</html>
